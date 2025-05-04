@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { Twitter, Linkedin, Github, Paperclip, X } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 import SocialLink from "./SocialLink";
 import HexagonalAvatar from "./HexagonalAvater";
 
@@ -65,29 +66,39 @@ const ProfileCard = () => {
             </div>
           </div>
           <div className="profile-card-social">
-            <SocialLink
-              icon={X}
-              href="https://twitter.com"
-              label="Twitter"
-              platform="twitter"
-            />
-            <SocialLink
-              icon={Github}
-              href="https://github.com"
-              label="GitHub"
-              platform="github"
-            />
-            <SocialLink
-              icon={Paperclip}
-              href="https://linkedin.com"
-              label="LinkedIn"
-              platform="linkedin"
-            />
+            <a
+              href="https://x.com/0xdamx"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+              className="social-link X"
+            >
+              <SocialIcon
+                network="x"
+                style={{ width: "1.5rem", height: "1.5rem" }}
+                className="social-icon"
+              />
+            </a>
+            <a
+              href="https://t.co/OeCvg0LCbF"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+              className="social-link telegram"
+            >
+              <SocialIcon
+                network="telegram"
+                style={{ width: "1.5rem", height: "1.5rem" }}
+                className="social-icon"
+              />
+            </a>
           </div>
           <div className="profile-card-footer">
             <div className="profile-card-crypto-hint crypto-code">
               <span></span>
-              <span className="crypto-orange">0x4d7800</span>
+              <span className="crypto-orange">
+                <a href="https://t.co/7IrBJ17oHl">TonNomads</a>
+              </span>
             </div>
           </div>
         </div>
