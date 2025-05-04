@@ -1,4 +1,3 @@
-// src/components/SocialLink.js
 import React from "react";
 
 const SocialLink = ({ icon: Icon, href, label, platform, className }) => {

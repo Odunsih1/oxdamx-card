@@ -1,14 +1,13 @@
-// src/components/ProfileCard.js
 "use client";
 import React from "react";
-import { Twitter, Linkedin, Github, Paperclip, X } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
-import SocialLink from "./SocialLink";
 import HexagonalAvatar from "./HexagonalAvater";
 
 const ProfileCard = () => {
   return (
     <div className="profile-card">
+      <div className="starfield"></div>
+
       <div className="profile-card-inner glass-card">
         <div className="profile-card-pattern crypto-pattern"></div>
         <div className="profile-card-content">

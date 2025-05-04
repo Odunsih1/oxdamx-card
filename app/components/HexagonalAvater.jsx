@@ -1,4 +1,3 @@
-// src/components/HexagonalAvatar.js
 import React from "react";
 
 const HexagonalAvatar = ({ src, alt, size = "md", className }) => {
